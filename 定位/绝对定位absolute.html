@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            /* 父亲没有定位，所以.son仍然以浏览器为准 */
+            /* 当父亲有定位时，子以父为准，元素移动一直以父为准 */
+            /* 以最近一级的祖级有定位的为准（如父无定位，但爷有，则以爷为准） */
+            /* 绝对定位不再占有原先的位置（脱标） */
+            width: 500px;
+            height: 200px;
+            background-color: blanchedalmond;
+        }
+        
+        .son {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            width: 200px;
+            height: 200px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 如果没有父类盒子，则以浏览器为准 -->
+    <!-- 如果父类存在但没有定位 则仍然以浏览器为准 -->
+    <div class="son"></div>
+    <div class="father"></div>
+</body>
+
+</html>

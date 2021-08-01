@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li {
+            float: left;
+            width: 150px;
+            height: 200px;
+            border: 1px solid red;
+            /* 让1+1=1让边框不会过粗 */
+            margin-left: -1px;
+        }
+        
+        ul li:hover {
+            /*1. 鼠标经过时 让盒子变成相对定位 浮起来 避免盒子被其他的盒子遮住 */
+            position: relative;
+            /* 2.鼠标经过盒子的时候 提高盒子的层级 （默认为0 数字越大层级越大）*/
+            z-index: 1;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+
+</html>
