@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 可以在每个css开头写上这个 避免盒子被撑开 */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        div {
+            /* 盒子大小为：width+padding+border */
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border: 20px solid red;
+            padding: 10px;
+            /* 默认的大小算法 */
+            box-sizing: content-box;
+        }
+        
+        p {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border: 20px solid red;
+            padding: 10px;
+            /* css3盒子模型 盒子的最终大小就是width（200px）的大小 */
+            box-sizing: border-box;
+            /* 宽度不会被撑开 */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        小猪乔治
+    </div>
+    <p>
+        小猪佩奇
+    </p>
+</body>
+
+</html>

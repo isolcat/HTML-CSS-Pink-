@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .box {
+            margin: 100px auto;
+            width: 248px;
+            height: 163px;
+            border: 1px solid #ccc;
+        }
+        
+        li {
+            /* 去掉ul中的小圆点 */
+            list-style: none;
+        }
+        
+        .box h3 {
+            /* 因为此处没有设定宽和高，所以使用padding不会撑开盒子 */
+            padding-left: 15px;
+            line-height: 32px;
+            font-weight: normal;
+            font-size: 14px;
+            height: 32px;
+            border-bottom: 1px dotted #ccc;
+        }
+        
+        .box ul li a {
+            font-style: 12px;
+            color: #666;
+            text-decoration: none;
+        }
+        
+        .box ul li {
+            height: 23px;
+            line-height: 23px;
+            padding-left: 20px;
+        }
+        
+        .box ul li a :hover {
+            text-decoration: underline;
+        }
+        
+        .box ul {
+            margin-top: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h3>品优购快报</h3>
+        <ul>
+            <li><a href="#">爆款耳机五折</a></li>
+            <li><a href="#">母亲节，健康好礼低至五折</a></li>
+            <li><a href="#">9.9元洗100张照片</a></li>
+            <li><a href="#">爆款手机三折秒</a></li>
+            <li><a href="#">长虹只能电视立省1000</a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
